@@ -1,0 +1,45 @@
+
+.main-list{
+    top: 0px;
+     height: 100%px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+
+
+.list-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    top: 15px;
+    position: relative;
+    left: 0px;
+    border-radius: 15px;
+
+}
+
+.list-btn{
+    top: 100px;
+    background-color: rgb(73, 110, 143);
+    opacity: 0.9;
+    font-size: x-large;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    z-index: 999;
+    box-shadow: 5px 5px 5px 5px  #888888be;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-btn:hover {
+    opacity: 0.5;
+    background-color: rgb(97, 156, 70);
+}
+.list-pluse-btn2{
+  
+}

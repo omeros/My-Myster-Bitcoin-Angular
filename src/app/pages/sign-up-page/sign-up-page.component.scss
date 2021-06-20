@@ -1,0 +1,30 @@
+
+.login-page{
+    position: relative;
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width:  440px;
+    height: 400px;
+    // background-color:#ffffff;
+    
+}
+.signup-container{
+    box-shadow: 5px 10px 10px 500vh #d8d5d5be;    
+    // box-shadow: 10 20px 40px rgb(0 0 0 ); #888888be; 
+    // 0 8px 16px rgb(0 0 0 / 10%);
+ position: absolute;
+ top :100px;
+ display: flex;
+ justify-content: center;
+ 
+
+}

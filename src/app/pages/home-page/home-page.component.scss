@@ -1,0 +1,38 @@
+.home-page {
+    box-shadow: 5px 5px 5px 10px  #888888be;
+    text-align: center;
+    background-color: rgb(160, 226, 140);
+     position: relative;
+     top: 50px;
+    left: 400px;
+    width: 600px;
+    height: 700px;
+    border-style: outset;
+    border-radius: 15px;
+}
+.home-container{
+    position: relative;
+    top: 0px;
+}
+
+.coinImage{
+    width: 100px
+}
+.home-image{
+    padding-top: 20px;
+    width : 250px;
+    border-radius: 150px;
+}
+.home-name{
+    font-size: x-large;
+}
+.movelist-container-home{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.num-coins{
+    font-size: xx-large;
+}

@@ -1,0 +1,53 @@
+
+.contact-details-page{
+    position: relative;
+    left: 600px;
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 10px  #888888be;
+        background-color: rgb(160, 226, 140);
+        position: absolute;
+        padding-top: 0x;
+        height: 500px;
+        width: 500px;
+        border-style: outset;
+        border-radius: 15px;
+
+        .details-container{
+            display: flex;
+            flex-direction: column;
+            .nameandemail{
+                position: relative;
+                left: 50px;
+                padding-bottom: 20px;
+            }
+
+        }
+        
+    }
+}
+    .contact-details-image{
+    max-width: 250px;
+    border-radius: 150px;
+    padding-top :10px ;
+}
+.details-page-name{
+    padding-top: 30px;
+    font-size: x-large;
+    color: rgb(7, 64, 114);
+}
+.links-container{
+    padding-top: 20px;
+
+}
+.details-link{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 15px;
+    color: rgb(10, 10, 10);
+    font-size: x-large;
+    position: relative;
+    left: 40px;
+}

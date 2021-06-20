@@ -1,0 +1,20 @@
+<div>
+    <form (submit)="doSignup()" class="login-form">
+        <div class="input-container"> 
+            <label for="password"  class="centerize-label" ></label>
+            <input type="text" name="password" id="password" [(ngModel)]= "signupCred.password"  placeholder="Password" class="login-input" >
+            <label for="username"Phone  class="centerize-label" ></label>
+            <input type="text" name="username" id="username" [(ngModel)]= "signupCred.username"  placeholder="User Name"  class=" login-input">
+        </div>
+        <div class="login-btn-container">
+            <button class="login-btn">Log In</button> 
+        </div>
+        <div class="login-line"></div>
+        <div class="newaccount-btn-container">
+            <button class="newaccount-btn" (click)="onCreatNewAccount.emit($event)">Creat New Account</button> 
+        </div>
+
+        <!-- (onSelectPet)="onSelectPet.emit($event)" -->
+    </form>
+</div>
+

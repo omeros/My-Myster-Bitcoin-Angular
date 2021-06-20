@@ -1,0 +1,14 @@
+<section class="login-page" (click)="closeLogIn($event)">
+
+    <div class="form-container">
+        <app-log-in  (onCreatNewAccount)="openCreatNewAccountModal()" ></app-log-in>
+        <div class="signup-container" *ngIf="isSignupModal">
+          <app-sign-up (onSignUpNow)="doSignUp($event)" ></app-sign-up>
+        </div>
+        <!-- <button class="delete-edit-page"  (click)="doSignup()">delete</button>  -->
+    </div>
+
+</section>
+
+
+

@@ -1,0 +1,23 @@
+
+
+  <div class="contact-details-page"> 
+    <div class="contact-details">
+        <div class="details-container">
+
+            <!-- {{contact|json}} -->
+            <div class="nameandemail">
+                <div class="details-page-name" >  {{contact.fullname}}        </div>
+                <div>  {{contact.email}} </div>
+            </div>
+            <img class="contact-details-image" [src]="contact.image" alt="">
+            
+            <div class="links-container">                
+                <a routerLink="/contacts" class="details-link"  >Back</a>
+                <a routerLink="/contact/5a56640269f443a5d64b32ca" class="details-link" >next</a>
+                <a [routerLink]="['/edit',contact._id]"   class="details-link"  >Edit</a>
+            </div>
+            <!-- <a routerLink="/edit"  class="details-link" > Add Contact</a> -->
+        </div>
+    </div>
+</div>
+

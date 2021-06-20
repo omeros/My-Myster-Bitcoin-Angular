@@ -1,0 +1,10 @@
+<div class="main-list">
+
+     <div class="list-btn" routerLink="/edit"   >  <img  class="list-pluse-btn2" src="https://res.cloudinary.com/omerphoto/image/upload/v1618002652/pluse2_su59a6.png" alt="">     </div> 
+    <div class="list-container">
+
+
+      <app-contact-preview *ngFor="let contact of contacts; index as idx" [tackBy]=trackByFn  [contact]="contact"  [routerLink]="['/contact',contact._id]" ></app-contact-preview>
+    </div>
+  
+</div>

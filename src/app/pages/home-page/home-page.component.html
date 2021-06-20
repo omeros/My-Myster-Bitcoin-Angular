@@ -1,0 +1,24 @@
+<div class="home-page">
+    <div class="home-container">
+        <div> Hello  <span class="home-name">{{(user[0].fullname)}}</span> ! </div>
+
+        <div> You Have <span class="num-coins"> {{user[0].coins}} coins</span> coins </div>
+        <div>current time BTC : {{coin}}      </div>
+       <div>
+            <img class="home-image" [src]="user[0].image" alt="" />
+        </div>
+      
+
+         <!-- <button (click)="choosUserToTransfer()">choos User</button> -->
+             <!-- <TransferFund /> -->
+
+
+        <div class="movelist-container-home">
+            move list
+      <!-- <MovesList className="movelist-container" moves={this.sortMoves()} /> -->
+        </div>
+
+
+
+    </div>
+</div>

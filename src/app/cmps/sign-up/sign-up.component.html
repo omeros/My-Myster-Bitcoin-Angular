@@ -1,0 +1,13 @@
+<div>
+    <form (submit)="doSignup()" class="signup-form" id="parent-node">
+        <div class="input-container"> 
+            <label for="fullname" class="centerize-label" ></label>
+            <input type="text" name="fullname"   id="fullname" [(ngModel)]="signupCred.fullname" placeholder="Full Name" class="signup-page-fullname signup-input" >
+            <label for="password"  class="centerize-label" ></label>
+            <input type="text" name="password" id="password" [(ngModel)]= "signupCred.password"  placeholder="Password" class="signup-page-password signup-input" >
+            <label for="username"Phone  class="centerize-label" ></label>
+            <input type="text" name="username" id="username" [(ngModel)]= "signupCred.username"  placeholder="User Name"  class="signup-page-username signup-input">
+        </div>
+        <button class="signup-btn" (click)="onSignUpNow.emit($event)" >Sign Up Now</button> 
+    </form>
+</div>

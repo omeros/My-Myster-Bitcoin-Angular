@@ -1,0 +1,23 @@
+
+<section class="contact-edit-page">
+    <!-- <label  for="imgUploader"  (drop).prevent="handleFile" @dragover.prevent="dragOver"  @dragleave="isDragOver = false"  > -->
+    <label   >
+        <img  class="image-cloudery" *ngIf="myImage" [src]="myImage" width="" height="">
+        <img  class="input-img" *ngIf="!myImage"   src="https://res.cloudinary.com/omerphoto/image/upload/v1618335628/upload3_te8f2v.png">
+        <!-- <input   id="imgUploader" class="file-btn round"  type="file" accept="image/*" (change)="uploadImage()" > -->
+        <input #imageInput    type="file"  hidden    accept="image/*"    (change)="uploadImage(imageInput)">
+    </label>
+    <img class="contact-details-image" [src]="contact.image" alt="">
+        <form (submit)="onSaveContact()" class="contact-edit">
+        <label for="fullname" class="centerize-label" >Full name</label>
+        <input type="text" name="fullname"   id="fullname" [(ngModel)]="contact.fullname"  class="edit-page-name" >
+        <label for="email"  class="centerize-label" >Email</label>
+        <input type="text" name="email" id="email" [(ngModel)]= "contact.email" class="edit-page-email" >
+        <label for="phone"Phone  class="centerize-label" >Phone</label>
+        <input type="text" name="phone" id="phone" [(ngModel)]= "contact.phone"  class="edit-page-phone">
+        <button class="save-edit-page">Save</button> 
+        <button class="delete-edit-page"  (click)="deleteContact()">delete</button> 
+        
+      </form>
+        <a [routerLink]="['/contact',oldContact._id]" class="edit-link"  >Back</a>
+</section>
